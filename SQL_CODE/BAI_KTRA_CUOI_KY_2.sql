@@ -90,7 +90,7 @@ else
 begin
 	select distinct TENGT, dbo.F1(@x) as [Tong So GV]
 	from BIENSOAN, GIAOTRINH	
-	where BIENSOAN.MAGT = GIAOTRINH.MAGT and BIENSOAN.MAGT = @x 
+	where BIENSOAN.MAGT = GIAOTRINH.MAGT and GIAOTRINH.MAGT = @x 
 end
 exec P1 'GT002'
 Câu 5) (2 điểm)
